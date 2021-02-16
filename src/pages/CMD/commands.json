@@ -1,0 +1,17 @@
+[
+    {"name":"Windows CMD",
+    "id":0,
+    "commands":[],
+    "flags":[]
+    },
+    {"name":"Linux CMD",
+    "id":1,
+    "commands":[],
+    "flags":[]
+    },
+    {"name":"Mac CMD",
+    "id":2,
+    "commands":[],
+    "flags":[]
+    }
+]

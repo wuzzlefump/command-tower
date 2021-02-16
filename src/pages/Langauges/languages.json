@@ -1,0 +1,17 @@
+[
+    {"name":"Javascript",
+        "id":0,
+        "functons":[],
+        "syntax":[]
+    },
+    {"name":"Python",
+        "id":1,
+        "functions":[],
+        "syntax":[]
+    },
+    {"name":"Haskell",
+        "id":1,
+        "functions":[],
+        "syntax":[]
+    }
+]
