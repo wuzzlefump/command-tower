@@ -1,17 +1,41 @@
 [
-    {"name":"Windows CMD",
+    {
+    "name":"CMD Home",
     "id":0,
-    "commands":[],
+    "commands":[
+        {"name":"cd", "id":"1", "use":"Change Directory","example":"cd folder2 (folder1 => folder2) cd .. (goes back a directory)"},
+        {"name":"ls", "id":"2", "use":"Lists files in a folder","example":" ls (shows all files in folder)"},
+        {"name":"open", "id":"3", "use":"Opens a file","example":"open Path_to_file (opens file)"},
+        {"name":"cp", "id":"4", "use":"Copies a file","example":" cp Path_to_file (copies file)"},
+        {"name":"mv", "id":"5", "use":" Moves a file or renames it","example":" mv Path/to/file Where/you/are/moving/it (moves file from point a to point b or 'mv 'path/to/filename' 'path/to/newfilename' renames it"},
+        {"name":"mkdir", "id":"6", "use":"Creates a folder / directory","example":"mkdir folder_name (makes a folder)"},
+        {"name":"rmdir", "id":"7", "use":" Removes empty directory","example":"rmdir path/to/emptydir (removes directory) "},
+        {"name":"rm", "id":"8", "use":"Removes File","example":"rm path/to/file (removes file)"},
+        {"name":"clear", "id":"9", "use":"Cleans up window","example":"clear (removes info from precious commands) "},
+        {"name":"help", "id":"10", "use":"Gives information on commands","example":"Help 'Command' (gives info on command) "},
+        {"name":"whatis", "id":"11", "use":"Gives single line on command","example":"whatis 'command' (says one line use for it) "},
+        {"name":"man", "id":"12", "use":"Gives verbose manual on command","example":"Man Command (gives lengthy description)"},
+        {"name":"exit", "id":"13", "use":"ends session","example":"exit (session ends)"}
+    ],
     "flags":[]
     },
-    {"name":"Linux CMD",
+    {"name":"Windows CMD",
     "id":1,
     "commands":[],
     "flags":[]
     },
-    {"name":"Mac CMD",
+    {"name":"Linux CMD",
     "id":2,
-    "commands":[],
+    "commands":[ 
+        {"name":"top", "id":"9", "use":"Lists active computer processes","example":""},
+        {"name":"sudo", "id":"1", "use":"Runs with root privelages","example":"sudo (any command) (runs command)"}],
+    "flags":[]
+    },
+    {"name":"Mac CMD",
+    "id":3,
+    "commands":[
+        {"name":"top", "id":"9", "use":"Lists active computer processes","example":""},
+        {"name":"sudo", "id":"1", "use":"Runs with root privelages","example":"sudo (any command) (runs command)"}],
     "flags":[]
     }
 ]
