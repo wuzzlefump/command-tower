@@ -2,12 +2,17 @@ import React, {useState, useEffect} from "react"
 import { Container, Row, Col,Jumbotron, Table, Button} from 'reactstrap';
 import commands from './commands.json'
 import './CMD.css'
-
+import Example from './components/info'
 
 
 function CMD(props){
 
     let [pageState,setPage]=useState(commands[0])
+
+    const changePage = (e)=>{
+      let x = e.target.name
+      setPage(commands[x]);
+    }
     useEffect(()=>{
         setPage(commands[0])
     },[])
@@ -22,7 +27,7 @@ function CMD(props){
                 <p className="lead">Choose an OS to find the default commands for</p>
                 <div className="buttonContainer">
                 {commands.map(item=>{
-                    return <Button className="buttonlyfe" color="secondary" info={item.id} size="lg">{item.name}</Button>
+                    return <Button  onClick={changePage} className="buttonlyfe" color="secondary" name={item.id} size="lg">{item.name}</Button>
                 })}
                 </div>
                 </Container>
@@ -44,7 +49,7 @@ function CMD(props){
                 <th scope="row">{item.id}</th>
                 <td>{item.name}</td>
                 <td>{item.use}</td>
-                <td>placeholder</td>
+                <td><Example example ={item.example} /></td>
               </tr>)   
             })}
       </tbody>
@@ -60,6 +65,14 @@ function CMD(props){
         </tr>
       </thead>
       <tbody>
+      {pageState.flags.map(item =>{
+             return(<tr>
+                <th scope="row">{item.id}</th>
+                <td>{item.name}</td>
+                <td>{item.use}</td>
+                <td><Example example ={item.example} /></td>
+              </tr>)   
+            })}
       </tbody>
     </Table>
         </Col>

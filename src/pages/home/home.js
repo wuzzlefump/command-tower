@@ -1,16 +1,19 @@
 import React from "react"
 import { Jumbotron, Button } from 'reactstrap'
 import './home.css'
-import Tower from "./assets/tower.jpg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBroadcastTower } from '@fortawesome/free-solid-svg-icons'
+
+
 function Home(props){
 
     return ( 
     <div>
         <Jumbotron className="home">
-            <h1 className="display-3">Command Tower</h1>
-            <img className="tower" src={Tower}></img>
+            <h1 className="display-3" >Command Tower</h1>
+            <FontAwesomeIcon size="9x" icon={faBroadcastTower} />
             <hr className="my-2" />
-            <p> a place for to reference all your commands</p>
+            <p> a place to reference all your commands</p>
             <p className="lead">
             </p>
         </Jumbotron>

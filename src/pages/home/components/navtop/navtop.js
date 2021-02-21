@@ -14,7 +14,7 @@ function NavTop(props){
     return(
           <div className ="datNav" >
     <Navbar color="dark" dark>
-        <NavbarBrand href="/" className="mr-auto">Command Tower</NavbarBrand>
+        <NavbarBrand href="/" className="mr-auto">Command Tower 1.0</NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
